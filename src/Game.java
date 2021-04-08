@@ -55,8 +55,7 @@ public class Game {
     //return Location of cursor
     public Vector2 mousePositionListener(){
         Point location = MouseInfo.getPointerInfo().getLocation();
-        Vector2 locVector = new Vector2((int)location.getX(),(int)location.getY());
-        return locVector;
+        return new Vector2((int)location.getX(),(int)location.getY());
     }
 
     //Window initialization
