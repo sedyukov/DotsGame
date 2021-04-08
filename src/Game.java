@@ -52,9 +52,11 @@ public class Game {
         });
     }
 
-    private void mousePositionListener(){
-        //MouseInfo.getPointerInfo();
-
+    //return Location of cursor
+    public Vector2 mousePositionListener(){
+        Point location = MouseInfo.getPointerInfo().getLocation();
+        Vector2 locVector = new Vector2((int)location.getX(),(int)location.getY());
+        return locVector;
     }
 
     //Window initialization

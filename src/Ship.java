@@ -14,6 +14,8 @@ public class Ship extends GameObject {
         if(game.pressedKeys.contains(39)){
             position.x += 10;
         }
+        position.x = game.mousePositionListener().x;
+        position.y = game.mousePositionListener().y;
     }
     @Override
     public void draw(Graphics g) {
